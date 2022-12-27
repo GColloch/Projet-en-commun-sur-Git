@@ -1,0 +1,29 @@
+.container-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EBEAEB;
+    height: 100%;
+}
+
+.login, .register{
+    background-color: #f49e4c;
+    border-radius: 6%;
+}
+
+.container h3, label{
+    color: var(--title-color);
+}
+
+.btn-login, .btn-signin{
+    background-color: var(--custom-primary);
+}
+
+.btn-login:hover, .btn-signin:hover{
+    background-color: var(--custom-secondary);
+}
+
+hr{
+    border-color: black;
+}
+

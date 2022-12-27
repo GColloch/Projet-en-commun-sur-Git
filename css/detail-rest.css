@@ -1,0 +1,98 @@
+
+/* General */
+
+html {
+    color: var(--text-color)
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+/* Title */
+
+.page_title {
+    color: var(--title-color);
+    text-align: center;
+}
+
+.title_rest {
+    color: var(--title-color);
+    position: relative;
+    left: 30px;
+    margin-bottom: 3%;
+}
+
+.title_part {
+    color: var(--title-color);
+    position: relative;
+    left: 100px;
+}
+
+.title_list {
+    color: var(--title-color);
+    text-align: center;
+    margin-left: 40px;
+}
+
+/* List */
+
+.list_entree{
+    list-style-type: none;
+    text-align: center;
+}
+
+.list_plat{
+   list-style-type: none;
+   text-align: center;
+}
+
+.list_dessert{
+    list-style-type: none;
+    text-align: center;
+}
+
+/* Other */
+
+.pres_rest{
+    margin-bottom: 5%;
+}
+
+.info_rest p{
+    text-align: center;
+}
+
+.map_rest {
+    margin-top: 3%;
+}
+
+.map_rest iframe{
+    width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+   }
+
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.plat_rest {
+    margin-top: 3%;
+}
+
+.plat_rest ul {
+    font-style: italic;
+}
+
+

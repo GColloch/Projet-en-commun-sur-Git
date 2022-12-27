@@ -1,0 +1,19 @@
+
+.mentions h1, .cgv h1{
+    text-align: center;
+    color: var(--title-color);
+    font-size: 3rem;
+}.mentions, .cgv{
+    width: 80%;
+    margin: 5rem auto;
+}
+.mentions h2, .cgv h2{
+    color: var(--title-color);
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.mentions p, .cgv p{
+    color: var(--text-color);
+}
+

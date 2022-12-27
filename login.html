@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./css/index.css' /> 
+    <link rel='stylesheet' href='./css/variables.css' /> 
+    <link rel='stylesheet' href='./css/login.css' /> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel='stylesheet' href='./css/variables.css' /> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="png" href="/img/logo-T.PNG" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>Login/Register</title>
+    <!-- NAVBAR -->
+    <nav style="background-color: var(--text-color);">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active link-menu"  aria-current="page" href="http://127.0.0.1:5500/index.html">ACCUEIL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-menu" href="http://127.0.0.1:5500/restaurants.html">RESTAURANTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-menu" href="http://127.0.0.1:5500/contacttt.html">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link   link-menu-connexion" href="http://127.0.0.1:5500/login.html" tabindex="-1" aria-disabled="true">CONNEXION</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- NAVBAR -->
+</head>
+<body>
+    <div class="container-login">
+        <div class="login" id="login-show">
+
+            <div class="login-box shadow-md rounded px-8 pt-6 pb-8 flex flex-col">
+                <h3 class="title"> Login</h3>
+                <br>
+                <hr>
+                <br>
+                <form action="" method="get">
+                    <div class="mb-4">
+                    <label class="block text-grey-darker text-sm font-bold mb-2" for="email">
+                        Email
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="email" type="email" placeholder="Email" required>
+                    </div>
+                    <div class="mb-6">
+                    <label class="block text-grey-darker text-sm font-bold mb-2" for="password">
+                        Password
+                    </label>
+                    <input class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3" id="password" type="password" placeholder="******************" required>
+                    </div>
+                    <div class="flex items-center justify-between">
+                    <button onclick="myFunction()" class="btn-signin font-bold py-2 px-4 rounded" type="button">
+                        <input type="submit" value="Sign In">
+                    </button>
+                    </div>
+                    <br>
+                    <div>
+                        You don't have an account yet? <a href="#" onclick="next()" > <u>Register Here</u></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="register" id="register-show" style="display: none;">
+            <div class="register-box shadow-md rounded px-8 pt-6 pb-8 flex flex-col">
+                <h3 class="title"> Register</h3>
+                <br>
+                <hr>
+                <br>
+                <form action="" method="get">
+                    <div class="mb-4">
+                        <label class="block text-grey-darker text-sm font-bold mb-2" for="firstname">
+                        Firstname
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="firstname" type="text" placeholder="Firstname" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-grey-darker text-sm font-bold mb-2" for="lastname">
+                        Lastname
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="lastname" type="text" placeholder="Lastname" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-grey-darker text-sm font-bold mb-2" for="address">
+                        Address
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="address" type="url" placeholder="Address" required>
+                    </div>
+                    <div class="mb-4">
+                    <label class="block text-grey-darker text-sm font-bold mb-2" for="email">
+                        Email
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="email" type="email" placeholder="Email" required>
+                    </div>
+                    <div class="mb-6">
+                    <label class="block text-grey-darker text-sm font-bold mb-2" for="password">
+                        Password
+                    </label>
+                    <input class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3" id="password" type="password" placeholder="******************" required>
+                    </div>
+                    <div class="flex items-center justify-between">
+                    <button onclick="myFunction()" class="btn-login font-bold py-2 px-4 rounded" type="button">
+                        <input type="submit" value="Register">
+                    </button>
+                    </div>
+                    <br>
+                    <div>
+                        You have an account already? <a href="#" onclick="prev()" > <u>Login Here</u></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+    function next(){
+        document.getElementById('login-show').style.display = "none";
+        document.getElementById('register-show').style.display = "flex";
+    }
+    function prev(){
+        document.getElementById('register-show').style.display = "none";
+        document.getElementById('login-show').style.display = "flex";
+    }
+
+    function myFunction() {
+        alert("Mdr ça marche pas");
+    }
+    
+    </script>
+
+</script>
+</body>
+</html>
+  
